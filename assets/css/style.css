@@ -2,7 +2,7 @@
 
 body {
   font-family: "Fraunces", serif;
-  background-color: hsl(30, 38%, 92%);
+  background-color: hsl(32, 48%, 85%);
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -20,14 +20,18 @@ body {
   display: flex;
   max-width: 666px;
   background-color: white;
-  margin: 0 1rem;
+  margin: 15px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
-.img_contaier {
+.img_container {
   width: 50%;
 }
 
-.img_contaier img {
+.img_container img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -43,7 +47,7 @@ body {
 .details_container .name {
   color: hsl(212, 21%, 14%);
   padding-right: 2rem;
-  margin-bottom: 1, 75rem;
+  margin-bottom: 1.75rem;
 }
 
 .details_container .description {
@@ -66,7 +70,7 @@ body {
   display: flex;
   gap: 1rem;
   align-items: center;
-  margin-bottom: 1.75;
+  margin-bottom: 1.75rem;
 }
 
 .price_container .current_price {
@@ -89,7 +93,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  font-family: "montserrat";
+  font-family: "Montserrat";
   padding: 1rem, 2rem;
   border-radius: 10px;
   cursor: pointer;
@@ -105,13 +109,19 @@ body {
     margin-bottom: 1rem;
   }
 
-  .img_contaier {
+  .img_container {
     width: 100px;
     height: 40%;
   }
 
-  .img_contaier img {
+  .img_container img {
     content: url("/assets/image/image-product-mobile.jpg");
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 
   .card {
